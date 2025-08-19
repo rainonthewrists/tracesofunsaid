@@ -156,7 +156,7 @@ $(document).ready(function() {
         hideOverlay();
     });
 
-    $('.vback-sketch').click(function() {
+    $('.vback').click(function() {
         history.pushState(null, null, location.pathname + location.search);
         hideOverlay();
     });
