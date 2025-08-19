@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traces of Unsaid</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="interview">
+            <span class="highlight static-line">
+                <b class="static-gray">Every</b> <b class="static-gray">answer</b> <b class="static-gray">is</b> <b class="static-gray">a</b> <b class="static-gray">moving</b> <b class="static-gray">question</b>
+            </span>
+            <span class="highlight title">
+                <a class="link" data-section="section-1"><b class="static">Traces</b> <b class="static">of</b> <b class="static">Unsaid</b></a>
+            </span>
+            <span class="highlight section section-1">
+                <b>An</b> <b>interactive</b> <b>digital</b> <b>poetry</b> <b>collection</b> <b>that</b> <b>explores</b> <b>how</b> <b>meaning</b> <b>forms</b>
+                <b>through</b> <b>movement</b><u>,</u> <b>presence</b><u>,</u> <b>and</b> <b>time</b><u>.</u>
+                <b>Works</b> <b>invite</b> <b>viewer</b> <b>to</b> <b>engage</b> <b>not</b> <b>just</b> <b>as</b> <b>a</b> <b>reader</b><u>,</u> <b>but</b> <b>as</b> <b>a</b> <b>co</b><u>-</u><b>creator</b><u>:</u>
+                <b>text</b> <b>dissolves</b> <b>and</b> <b>reforms</b><u>,</u> <b>reacts</b> <b>to</b> <b>gestures</b><u>,</u> <b>and</b> <b>drifts</b><u>.</u>
+                <b>Rather</b> <b>than</b> <b>delivering</b> <b>fixed</b> <b>messages</b><u>,</u> <b>these</b> <b>poems</b> <b>inhabit</b> <b>a</b> <b>space</b> <b>of</b> <b>potential</b><u>,</u>
+                <b>where</b> <b>meaning</b> <b>appears</b> <b>only</b> <b>for</b> <b>a</b> <b>moment</b><u>.</u> <b>{</b><b>...</b><b>}</b>
+            </span>
+            <a class="link" data-ref="focus" data-section="section-2">● Focus</a>
+            <div class="image-placeholder focus-placeholder">
+                <img class="hover-image focus-image" src="https://cdn.glitch.global/8f8b7f28-5958-4bcd-83cf-e41e0598f000/20250602-134218.gif?v=1748861066186" alt="Focus Image">
+            </div>
+            <span class="question section section-2">
+                <b>How</b> <b>long</b> <b>can</b> <b>you</b> <b>hold</b> <b>a</b> <b>word</b> <b>at</b> <b>your</b> <b>fingertips</b><u>?</u>
+            </span>
+            <div class="vcontent" id="focus">
+                <div class="vcontent-header">
+                    <h2 class="vcontent-title">Focus</h2>
+                </div>
+                <div class="vcontent-main">
+                    <p class="vcontent-instruction">Bring your thumb and index finger together to form words. Hold to keep them steady.</p>
+                    <button class="vcontent-start">Start</button>
+                </div>
+                <a class="vback">Back</a>
+            </div>
+            <div id="focus-sketch-overlay" class="sketch-overlay">
+                <iframe id="focus-iframe" class="vcontent-iframe" src="" frameborder="0" allow="camera; fullscreen"></iframe>
+                <a class="vback-sketch">Back</a>
+            </div>
+            <span class="highlight section section-2">
+                <b>Letters</b> <b>exist</b> <b>in</b> <b>disorder</b> <b>until</b> <b>the</b> <b>viewer</b> <b>creates</b> <b>a</b> <b>point</b> <b>of</b> <b>focus</b>
+                <b>by</b> <b>bringing</b> <b>together</b> <b>their</b> <b>thumb</b> <b>and</b> <b>index</b> <b>finger</b><u>.</u>
+                <b>Around</b> <b>this</b> <b>point</b><u>,</u> <b>the</b> <b>symbols</b> <b>begin</b> <b>to</b> <b>gather</b> <b>into</b> <b>words</b><u>.</u>
+                <b>This</b> <b>gesture</b> <b>becomes</b> <b>a</b> <b>metaphor</b> <b>for</b> <b>concentration</b><u>:</u>
+                <b>as</b> <b>soon</b> <b>as</b> <b>attention</b> <b>fades</b><u>,</u> <b>the</b> <b>text</b> <b>falls</b> <b>apart</b> <b>once</b> <b>again</b><u>.</u>
+            </span>
+            <a class="link" data-ref="pathways" data-section="section-3">● Pathways</a>
+            <div class="image-placeholder pathways-placeholder">
+                <img class="hover-image pathways-image" src="https://cdn.glitch.global/8f8b7f28-5958-4bcd-83cf-e41e0598f000/pre_birds_for%20web.gif?v=1749019894971" alt="Pathways Image">
+            </div>
+            <span class="question section section-3">
+                <b>Where</b> <b>do</b> <b>birds</b> <b>fly</b> <b>when</b> <b>the</b> <b>sky</b> <b>runs</b> <b>out</b><u>?</u>
+            </span>
+            <span class="question section section-3">
+                <b>How</b> <b>much</b> <b>time</b> <b>does</b> <b>a</b> <b>snail</b> <b>carry</b> <b>on</b> <b>its</b> <b>back</b><u>?</u>
+            </span>
+            <span class="question section section-3">
+                <b>What</b> <b>do</b> <b>fish</b> <b>stay</b> <b>silent</b> <b>about</b> <b>when</b> <b>their</b> <b>eyes</b> <b>meet</b><u>?</u>
+            </span>
+            <div class="vcontent" id="pathways">
+                <div class="vcontent-header">
+                    <h2 class="vcontent-title">Pathways</h2>
+                </div>
+                <div class="vcontent-main">
+                    <p class="vcontent-instruction">Observe the flight of birds and insects. Their paths will form words in real-time.</p>
+                    <button class="vcontent-start">Start</button>
+                </div>
+                <a class="vback">Back</a>
+            </div>
+            <div id="pathways-sketch-overlay" class="sketch-overlay">
+                <iframe id="pathways-iframe" class="vcontent-iframe" src="" frameborder="0" allow="fullscreen"></iframe>
+                <a class="vback-sketch">Back</a>
+            </div>
+            <span class="highlight section section-3">
+                <b>The</b> <b>flight</b> <b>of</b> <b>birds</b><u>,</u> <b>the</b> <b>drift</b> <b>of</b> <b>insects</b><u>,</u> <b>the</b> <b>invisible</b> <b>currents</b> <b>of</b> <b>wind</b> <b>-</b>
+                <b>their</b> <b>paths</b> <b>become</b> <b>writing</b><u>.</u>
+                <b>Words</b> <b>emerge</b> <b>at</b> <b>the</b> <b>intersection</b> <b>of</b> <b>motion</b> <b>and</b> <b>code</b><u>,</u>
+                <b>forming</b> <b>fleeting</b><u>,</u> <b>unstable</b> <b>structures</b><u>.</u>
+                <b>Using</b> <b>object</b> <b>recognition</b> <b>and</b> <b>motion</b> <b>tracking</b><u>,</u>
+                <b>the</b> <b>installation</b> <b>translates</b> <b>these</b> <b>trajectories</b> <b>into</b> <b>text</b><u>.</u>
+            </span>
+            <a class="link" data-ref="gravity" data-section="section-4">● Gravity</a>
+            <div class="image-placeholder gravity-placeholder">
+                <img class="hover-image gravity-image" src="https://cdn.glitch.global/8f8b7f28-5958-4bcd-83cf-e41e0598f000/20250604-094959.gif?v=1749020049913" alt="Gravity Image">
+            </div>
+            <span class="question section section-4">
+                <b>How</b> <b>do</b> <b>you</b> <b>know</b> <b>when</b> <b>a</b> <b>word</b> <b>has</b> <b>found</b> <b>its</b> <b>place</b><u>?</u>
+            </span>
+            <div class="vcontent" id="gravity">
+                <div class="vcontent-header">
+                    <h2 class="vcontent-title">Gravity</h2>
+                </div>
+                <div class="vcontent-main">
+                    <p class="vcontent-instruction">Move your cursor to shift the viewing angle. Watch words collide and form new meanings.</p>
+                    <button class="vcontent-start">Start</button>
+                </div>
+                <a class="vback">Back</a>
+            </div>
+            <div id="gravity-sketch-overlay" class="sketch-overlay">
+                <iframe id="gravity-iframe" class="vcontent-iframe" src="" frameborder="0" allow="fullscreen"></iframe>
+                <a class="vback-sketch">Back</a>
+            </div>
+            <span class="highlight section section-4">
+                <b>Words</b> <b>exist</b> <b>as</b> <b>physical</b> <b>objects</b><u>.</u>
+                <b>Intersecting</b><u>,</u> <b>colliding</b><u>,</u> <b>and</b> <b>drawing</b> <b>each</b> <b>other</b> <b>in</b><u>,</u>
+                <b>they</b> <b>reshape</b> <b>poetic</b> <b>connections</b><u>.</u>
+                <b>The</b> <b>viewer</b> <b>becomes</b> <b>part</b> <b>of</b> <b>the</b> <b>system</b><u>:</u>
+                <b>by</b> <b>shifting</b> <b>their</b> <b>device</b> <b>and</b> <b>changing</b> <b>the</b> <b>viewing</b> <b>angle</b>
+                <b>through</b> <b>the</b> <b>phone</b><b>'</b><b>s</b> <b>gyroscope</b><u>,</u>
+                <b>they</b> <b>reveal</b> <b>new</b> <b>structures</b> <b>and</b> <b>witness</b> <b>the</b> <b>formation</b> <b>of</b> <b>meaning</b><u>.</u>
+            </span>
+            <a class="link" data-ref="echo" data-section="section-5">● Echo</a>
+            <span class="question section section-5">
+                <b>Where</b> <b>does</b> <b>a</b> <b>question</b> <b>end</b> <b>and</b> <b>an</b> <b>answer</b> <b>begin</b><u>?</u>
+            </span>
+            <span class="highlight section section-5">
+                <b>The</b> <b>viewer</b> <b>and</b> <b>artificial</b> <b>intelligence</b> <b>become</b> <b>co-authors</b><u>,</u>
+                <b>shaping</b> <b>a</b> <b>poetic</b> <b>text</b> <b>in</b> <b>real</b> <b>time</b><u>.</u>
+                <b>Speech</b> <b>recognition</b> <b>and</b> <b>a</b> <b>language</b> <b>model</b> <b>enable</b> <b>the</b> <b>machine</b> <b>to</b> <b>engage</b>
+                <b>in</b> <b>a</b> <b>dialogue</b> <b>of</b> <b>poetic</b> <b>associations</b><u>.</u>
+            </span>
+            <div class="vcontent" id="echo">
+                <div class="vcontent-header">
+                    <h2 class="vcontent-title">Echo</h2>
+                </div>
+                <div class="vcontent-main">
+                    <p class="vcontent-instruction">Speak to the installation. Your words will trigger poetic responses from the AI, co-creating a dynamic text through speech recognition.</p>
+                    <button class="vcontent-start">Start</button>
+                </div>
+                <a class="vback">Back</a>
+            </div>
+            <div id="echo-sketch-overlay" class="sketch-overlay">
+                <iframe id="echo-iframe" class="vcontent-iframe" src="" frameborder="0" allow="microphone; fullscreen"></iframe>
+                <a class="vback-sketch">Back</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
