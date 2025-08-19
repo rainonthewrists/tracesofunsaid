@@ -149,17 +149,11 @@ $(document).ready(function() {
         showOverlay(ref);
     });
 
-    // Кнопка "Back"
-    $('.vback').click(function() {
-       onganization.hash = `#${ref}`;
-        history.pushState(null, null, location.pathname + location.search);
-        hideOverlay();
-    });
-
     $('.vback').click(function() {
         history.pushState(null, null, location.pathname + location.search);
         hideOverlay();
     });
+    
 
     // Инициализация iframe по кнопке "Start"
     $('.vcontent-start').click(function() {
