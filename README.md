@@ -1,0 +1,2 @@
+
+Traces of Unsaid — interactive digital poetry collection that explores how meaning forms through movement, presence, and time. Works invite viewer to engage not just as a reader, but as a co-creator: text dissolves and reforms, reacts to gestures, and drifts. Rather than delivering fixed messages, these poems inhabit a space of potential, where meaning appears only for a moment.
