@@ -115,8 +115,9 @@ $(document).ready(function() {
         }
     );
 
-    // Показ оверлея инсталляции
+    // Показ оверлея
     const showOverlay = (ref) => {
+        console.log('showOverlay called for:', ref);
         $('body').addClass('vlink');
         const $vcontent = $(`#${ref}`);
         $vcontent.addClass('active').css('visibility', 'visible');
@@ -124,19 +125,17 @@ $(document).ready(function() {
         $(`#${ref}-sketch-overlay`).removeClass('active').css('visibility', 'hidden');
     };
 
-    // Скрытие оверлея и очистка iframe
+    // Скрытие оверлея
     const hideOverlay = () => {
+        console.log('hideOverlay called');
+        console.log('vcontent active:', $('.vcontent').hasClass('active'));
+        console.log('sketch-overlay active:', $('.sketch-overlay').hasClass('active'));
         $('body').removeClass('vlink');
-        const $vcontent = $('.vcontent');
-        $vcontent.removeClass('active');
-        $('.sketch-overlay').removeClass('active');
+        $('.vcontent').removeClass('active').css('visibility', 'hidden');
+        $('.sketch-overlay').removeClass('active').css('visibility', 'hidden');
         $('.vcontent-iframe').removeClass('active').attr('src', '');
-        
-        setTimeout(() => {
-            $vcontent.css('visibility', 'hidden');
-            $('.sketch-overlay').css('visibility', 'hidden');
-            startAnimation();
-        }, 1000);
+        $('.vcontent-main').show();
+        startAnimation();
     };
 
     // Навигация по ссылкам
@@ -149,14 +148,19 @@ $(document).ready(function() {
         showOverlay(ref);
     });
 
-    $('.vback').click(function() {
+    // Обработчик для .vback
+    $('.vback').off('click').click(function(event) {
+        event.stopPropagation();
+        console.log('Back button clicked');
+        window.location.hash = '';
         history.pushState(null, null, location.pathname + location.search);
         hideOverlay();
     });
-    
 
-    // Инициализация iframe по кнопке "Start"
-    $('.vcontent-start').click(function() {
+    // Обработчик для .vcontent-start
+    $('.vcontent-start').off('click').click(function(event) {
+        event.stopPropagation();
+        console.log('Start button clicked');
         const sectionId = $(this).closest('.vcontent').attr('id');
         $(this).closest('.vcontent-main').hide();
         const $overlay = $(`#${sectionId}-sketch-overlay`);
@@ -177,4 +181,12 @@ $(document).ready(function() {
     if (window.location.hash) {
         showOverlay(window.location.hash.replace('#', ''));
     }
+
+    // Обработка кнопки "Назад" браузера
+    window.addEventListener('popstate', function() {
+        console.log('popstate triggered');
+        if (!window.location.hash) {
+            hideOverlay();
+        }
+    });
 });
