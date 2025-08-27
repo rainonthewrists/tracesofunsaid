@@ -173,7 +173,7 @@ $(document).ready(function() {
         } else if (sectionId === 'echo') {
             $iframe.addClass('active').attr('src', 'https://rainonthewrists.github.io/echo/');
         } else if (sectionId === 'gravity') {
-            $iframe.addClass('active').attr('src', 'https://rainonthewrists.github.io/gravity/');
+            $iframe.addClass('active').attr('src', 'https://curseofdimensionality.science/');
         }
     });
 
